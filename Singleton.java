@@ -1,10 +1,10 @@
 public class Singleton {
-    private static Singleton isExists = null;
+    private static Singleton instance = null;
 
     private Singleton() {}
 
     public static Singleton getInstance() {
-        if (isExists == null) isExists = new Singleton();
-        return isExists;
+        if (instance == null) instance = new Singleton();
+        return instance;
     }
 }
